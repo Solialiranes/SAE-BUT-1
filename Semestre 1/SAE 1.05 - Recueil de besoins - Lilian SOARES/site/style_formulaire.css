@@ -1,0 +1,150 @@
+head {
+	text-align: left;
+}
+
+body { /* Police d'écriture*/
+	font-family: "Roboto", "Arial Black", "serif";
+}
+
+
+@font-face { 
+  font-family: Roboto ;
+  src: local(Police Exemple), url('police/static/RobotoSlab-Light.ttf') format("ttf"),
+      url('police/static/RobotoSlab-Light.ttf') format("opentype");
+}
+
+body { /* Background */
+	color:black;
+	text-align: center;
+	background-color: #ccd5ae;
+	margin:0;
+	padding:0;
+	background: url(images/abbaye_floue.jpg) no-repeat center fixed; 
+	background-size: cover; 
+}
+
+.nav { /* MENU DU SITE */
+	display: flex;
+	flex-wrap: wrap;
+	padding-left: 0;
+	margin-bottom: 0;
+	margin-top: 0;
+	list-style: none;
+}
+
+.nav-fill > .nav-link,  /* Pour le menu centré et rempli */
+.nav-fill .nav-item {
+	flex: 1 1 auto;
+	text-align: center;
+	background-color : #fefae0;
+}
+
+.nav-link { /* Pour créer les contenaires clickables*/
+	display: block;
+	padding: 0.5rem 1rem;
+	color: black;
+	text-decoration: none;
+	transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+}
+
+.nav-link:hover, .nav-link:focus { /* Pour l'effet de changement de couleur quand on passe la souris dessus*/
+	color: #656d4a;
+}
+
+.nav-link.disabled { /* Pour les onglets non clickables (le curseur reste curseur)*/
+	color: black;
+	pointer-events: none;
+	cursor: default;
+}
+
+.nav-tabs { /* Pour la barre blanche sous le menu*/
+	border-bottom: 1px solid #cbc0d3;
+
+}
+
+.nav-tabs .nav-link { /* Pour le contour blanc de la case clickable*/
+	margin-bottom: -1px;
+	background: none;
+	border: 1px solid transparent;
+	border-top-left-radius: 0.25rem;
+	border-top-right-radius: 0.25rem;
+}
+
+.nav-tabs .nav-link:hover, .nav-tabs .nav-link:focus { /* Pour le contour blanc de la case clickable*/
+	border-color: #656d4a #656d4a #656d4a;
+}
+
+.nav-tabs .nav-link.disabled { /* Pour le contour blanc et le texte de la case non clickable*/
+	color: #335c67;
+	background-color: transparent;
+	border-color: transparent;
+}
+
+.nav-tabs .nav-link.active, /* Pour la couleur dans la case dite active*/
+.nav-tabs .nav-item.show .nav-link {
+	color: white;
+	background-color: #656d4a;
+	border-color: #dee2e6 #dee2e6 ;
+}
+
+
+#menu {
+	z-index:50; 
+	position:sticky; 
+	top:0;
+}
+
+.paragraphe{
+	color : white;
+	text-shadow: 0 0 2px #000, 0 0 2px #000, 0 0 2px #000, 0 0 2px #000, 0 0 2px #000, 0 0 2px #000, 0 0 2px #000, 0 0 2px #000, 0 0 2px #000, 0 0 2px #000, 0 0 2px #000, 0 0 2px #000, 0 0 2px #000, 0 0 2px #000, 0 0 2px #000, 0 0 2px #000, 0 0 2px #000, 0 0 2px #000, 0 0 2px #000, 0 0 2px #000;
+	margin-right : 250px;
+	margin-left : 250px;
+}
+
+.titre_h2{
+	color: #fefae0;
+	text-shadow: 0 0 2px #000, 0 0 2px #000, 0 0 2px #000, 0 0 2px #000, 0 0 2px #000, 0 0 2px #000, 0 0 2px #000, 0 0 2px #000, 0 0 2px #000, 0 0 2px #000, 0 0 2px #000, 0 0 2px #000, 0 0 2px #000, 0 0 2px #000, 0 0 2px #000, 0 0 2px #000, 0 0 2px #000, 0 0 2px #000, 0 0 2px #000, 0 0 2px #000;
+}
+
+.formulaire{
+	margin-bottom:10px;
+	color:white;
+}
+
+/*FORMULAIRE*/
+form input[type="text"]{width:50%; margin-bottom:16px; padding:16px; color:black; border:1px solid black; border-radius:5px;}
+form input[type="text"]:hover{background-color:#fefae0;}
+form input[type="email"]{width:50%; margin-bottom:16px; padding:16px; color:black; border:1px solid black; border-radius:5px;}
+form input[type="email"]:hover{background-color:#fefae0;}
+
+/*SEND BUTTON*/
+form button[type="submit"]{width:50%; height:auto; margin-top:15px; margin-bottom:auto; padding:20px; border:1px solid black; border-radius:5px;}
+form button[type="submit"]{font-weight:bold; color:black; text-transform:uppercase; background-color:#656d4a;}
+form button[type="submit"]:hover{background-color:#fefae0;}
+
+
+.footer{
+	background-color: #fefae0;
+	align-items: center!important;
+	padding: 25px 0;
+	text-align: center;
+}
+
+.align{
+	display: flex;
+	justify-content: center
+}
+
+.logogauche{
+	margin: 0 100px;
+	padding-top: 10px;
+}
+
+.logodroit {
+	margin: 0 100px;
+	padding-top: 10px;
+}
+
+span {
+	color: #fefae0;
+}
